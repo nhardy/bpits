@@ -50,11 +50,11 @@ export default class DefaultLayout extends Component {
           src={hero}
           srcSet={`${hero} 1x, ${hero2x} 2x, ${hero3x} 3x`}
           sizes="100vw"
-          alt="Aoraki/Mount Cook National Park, New Zealand"
+          alt="Blue-green corrugated metal"
         >
           <div className={styles.inner}>
-            <span className={styles.name}><Link to="/">Nathan Hardy</Link></span>
-            <span className={styles.tagline}>Student | Developer</span>
+            <span className={styles.name}><Link to="/">Custom watches</Link></span>
+            <span className={styles.tagline}>Stylish | Affordable</span>
           </div>
         </Parallax>
         <main className={cx(styles.main, this.props.className)}>

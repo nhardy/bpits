@@ -1,7 +1,7 @@
 export default {
   port: process.env.PORT || 8000,
-  baseUrl: 'https://nhardy.id.au',
-  siteName: 'nhardy.id.au',
+  baseUrl: 'http://watchout-bpits.azurewebsites.net',
+  siteName: 'WatchOut',
   analytics: {
     trackingId: process.env.ANALYTICS_TRACKING_ID,
   },

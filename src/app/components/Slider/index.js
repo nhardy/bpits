@@ -22,7 +22,7 @@ type Props = {
   autoplay: boolean;
   duration: number,
   interval: number,
-  children: Element<*>,
+  children?: Element<*>,
 };
 
 type State = {

@@ -98,13 +98,13 @@ export default class ContactView extends Component {
         </Helmet>
         {!sent ? (
           <form className={styles.form}>
-            <h1>Contact Me</h1>
+            <h1>Contact Us</h1>
             <label className={styles.label} htmlFor="contact-name">Name</label>
             <Text name="name" id="contact-name" pattern=".{2,100}" required placeholder="e.g. John Smith" />
             <label className={styles.label} htmlFor="contact-email">Email</label>
             <Email name="email" required />
             <label className={styles.label} htmlFor="contact-subject">Subject</label>
-            <Text name="subject" id="contact-subject" pattern=".{3,50}" required placeholder="e.g. Résumé" />
+            <Text name="subject" id="contact-subject" pattern=".{3,50}" required placeholder="e.g. Order Enquiry" />
             <label className={styles.label} htmlFor="contact-message">Message</label>
             <TextArea name="message" id="contact-message" required placeholder="Type your message..." />
             <Recaptcha withRef={ref => (this._captcha = ref)} name="captcha" />
@@ -127,7 +127,7 @@ export default class ContactView extends Component {
         ) : (
           <div className={styles.styl}>
             <h1>Thanks for your message!</h1>
-            <p>I&apos;ll be in touch soon.</p>
+            <p>We&apos;ll be in touch soon.</p>
             <p>Send <a href="" onClick={this.reset}>another</a>?</p>
           </div>
         )}

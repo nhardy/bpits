@@ -23,7 +23,11 @@ const ErrorView = ({ route: { status } }: { route: { status: number }}) => (
         {' '}
         Think something&apos;s missing?
         {' '}
-        <Link to="/contact">Contact me</Link> and let me know.
+        Use the
+        {' '}
+        <Link to="/contact">Contact Form</Link>
+        {' '}
+        and let us know.
       </p>
     ) : (
       <p>
@@ -31,7 +35,11 @@ const ErrorView = ({ route: { status } }: { route: { status: number }}) => (
         {' '}
         <em>Sorry</em>.
         {' '}
-        <Link to="/contact">Contact me</Link> and let me know.
+        Use the
+        {' '}
+        <Link to="/contact">Contact Form</Link>
+        {' '}
+        and let us know.
         {' '}
         If <em>this</em> is the contact page, terribly sorry.
       </p>

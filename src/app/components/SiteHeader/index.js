@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import cx from 'classnames';
 
-import config from 'app/config';
 import throttle from 'app/lib/throttle';
 import FontAwesome from 'app/components/FontAwesome';
 import styles from './styles.styl';
@@ -51,20 +50,17 @@ export default class SiteHeader extends Component {
           <label htmlFor="drawer" className={styles.hamburger}>
             <FontAwesome className="fa-bars" />
           </label>
-          <Link to="/" className={styles.siteName}>{config.siteName}</Link>
+          <Link to="/" className={styles.siteName}>Watch<FontAwesome className={cx('fa-clock-o', styles.clock)} />ut</Link>
           <nav className={styles.nav}>
             <ul className={styles.list}>
               <li className={styles.item}>
                 <Link className={styles.link} to="/">Home</Link>
               </li>
               <li className={styles.item}>
-                <Link className={styles.link} to="/contact">Contact Me</Link>
+                <Link className={styles.link} to="/contact">Contact Us</Link>
               </li>
               <li className={styles.item}>
-                <Link className={styles.link} to="/projects">Projects</Link>
-              </li>
-              <li className={styles.item}>
-                <Link className={styles.link} to="/cv">Curriculum Vitæ</Link>
+                <Link className={styles.link} to="/buy">Buy</Link>
               </li>
             </ul>
           </nav>

@@ -13,7 +13,7 @@ const SiteFooter = () => (
         <div className={styles.info}>
           <div className={styles.social}>
             <a href="/linkedin" target="_blank" rel="noopener noreferrer">
-              <FontAwesome className="fa-linkedin-square" />
+              <FontAwesome className="fa-instagram" />
             </a>
             <a href="/github" target="_blank" rel="noopener noreferrer">
               <FontAwesome className="fa-github" />
@@ -24,10 +24,10 @@ const SiteFooter = () => (
           </div>
         </div>
         <div className={styles.info}>
-          Web Development by <Link to="/">Nathan Hardy</Link>.
+          Web Development by <a href="https://nhardy.id.au/" target="blank" rel="noopener noreferrer">Nathan Hardy</a>.
         </div>
         <div className={cx(styles.info, styles.copyright)}>
-          <span>&copy; {(new Date()).getFullYear()} Nathan Hardy</span>
+          <span>&copy; {(new Date()).getFullYear()} Group 3</span>
         </div>
       </div>
     </div>

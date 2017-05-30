@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router';
 
 import config from 'app/config';
 import { makeTitle } from 'app/lib/social';
@@ -31,78 +30,136 @@ const HomeView = () => (
       <meta name="twitter:title" content={makeTitle(TITLE)} />
       <meta name="twitter:description" content={DESCRIPTION} />
     </Helmet>
-    <h1>Home</h1>
+    <h1>About Us</h1>
     <img className={styles.profile} src={profileImg} srcSet={`${profileImg2x} 2x, ${profileImg3x} 3x`} alt="Profile" />
     <p>
-      I&apos;m a
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       {' '}
-      <a
-        href="https://www.uts.edu.au/future-students/information-technology/about-information-technology/bit-co-operative-scholarship"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Bachelor of Information Technology
-      </a>
+      Quisque sed aliquet magna.
       {' '}
-      student at the
+      Vestibulum pellentesque tortor velit, at congue tellus mattis ut.
       {' '}
-      <a href="https://www.uts.edu.au/" target="_blank" rel="noopener noreferrer">University of Technology, Sydney</a>
+      Cras cursus, orci et ornare consectetur, ligula sapien aliquam leo, ac hendrerit dui est sed quam.
       {' '}
-      with a passion for IT and computer science.
-      I&apos;m currently interning at
+      Donec at efficitur lacus.
       {' '}
-      <a href="https://www.appliancesonline.com.au/" target="_blank" rel="noopener noreferrer">Appliances Online</a>
+      In lobortis tempor orci vel vehicula.
       {' '}
-      and have previously interned and worked at
+      Quisque ut lorem quam.
       {' '}
-      <a href="http://www.nineentertainmentco.com.au/" target="_blank" rel="noopener noreferrer">Nine Digital</a>,
+      Phasellus porta erat in lacinia consectetur.
       {' '}
-      working on the
+      Mauris urna mi, efficitur ut ullamcorper quis, tempor ac ex.
       {' '}
-      <a href="https://www.9now.com.au/">9Now</a>
+      Etiam enim neque, bibendum ut purus a, congue mattis urna.
       {' '}
-      <abbr title="Video On Demand">VOD</abbr>
+      Pellentesque ex lacus, gravida ut pulvinar sit amet, suscipit id elit.
       {' '}
-      website.
+      Cras facilisis nunc nec tristique viverra.
+      {' '}
+      Aenean gravida est et egestas sodales.
+      {' '}
+      In enim massa, lobortis eu ultrices id, sagittis eu elit.
     </p>
     <p>
-      For the second half of 2017, I will be studying overseas in New Zealand at the
+      Quisque suscipit nulla id fermentum maximus.
       {' '}
-      <a href="http://www.otago.ac.nz/" target="_blank" rel="noopener noreferrer">University of Otago</a>.
+      Quisque ut ligula velit.
+      {' '}
+      In nec odio sem.
+      {' '}
+      Pellentesque arcu dui, finibus quis mollis ut, finibus elementum nisl.
+      {' '}
+      Suspendisse porta urna et sapien gravida, at malesuada nulla finibus.
+      {' '}
+      Nunc ex elit, commodo eget mollis auctor, consectetur id massa.
+      {' '}
+      Duis volutpat est enim.
+      {' '}
+      Vivamus lobortis pellentesque justo lobortis malesuada.
+      {' '}
+      Duis in nisl pellentesque, luctus arcu a, pharetra risus.
+      {' '}
+      Vestibulum vel mattis nibh.
+      {' '}
+      Pellentesque eleifend mollis augue, in malesuada leo lobortis quis.
+      {' '}
+      Suspendisse vel felis consequat, placerat ipsum ac, condimentum erat.
+      {' '}
+      Vivamus ante eros, elementum et porta in, placerat fermentum dolor.
+      {' '}
+      Nam libero metus, auctor non sem sed, tempus dapibus eros.
     </p>
     <p>
-      I have had an interest in computers from a young age and have worked on many small projects, some of which are listed
+      Suspendisse tincidunt vel diam sed ultricies.
       {' '}
-      <Link to="/projects">here</Link>.
+      Sed tincidunt lacinia velit at vulputate.
       {' '}
-      I am proficient in the use of the git version control system and have used this in a variety of personal and professional projects.
+      Nam pharetra malesuada vestibulum.
       {' '}
-      In my time at
+      Pellentesque semper justo eget rhoncus consectetur.
       {' '}
-      <a href="http://www.nineentertainmentco.com.au/" target="_blank" rel="noopener noreferrer">Nine Digital</a>,
+      Quisque pretium, ex eget lobortis viverra, quam sapien aliquet sapien, eget dictum lectus neque vitae leo.
       {' '}
-      I developed an understanding of the frameworks and architecture around which this website is based, including
+      Pellentesque rhoncus cursus aliquam.
       {' '}
-      <a href="https://nodejs.org" target="_blank" rel="noopener noreferrer">Node.js</a>,
-      {' '}
-      <a href="https://facebook.github.io/react/" target="_blank" rel="noopener noreferrer">React</a>,
-      {' '}
-      <a href="http://redux.js.org/" target="_blank" rel="noopener noreferrer">Redux</a>,
-      {' '}
-      <a href="https://webpack.js.org/" target="_blank" rel="noopener noreferrer">Webpack</a>,
-      {' '}
-      <a href="https://github.com/css-modules/css-modules" target="_blank" rel="noopener noreferrer">CSS Modules</a>,
-      {' '}
-      etc.
-      {' '}
-      This website is an open-source project
-      {' '}
-      <a href={config.github.repoUrl} target="_blank" rel="noopener noreferrer">available on GitHub</a>.
-      {' '}
-      Please note that although the project is open-source, some images and content are copyrighted.
+      Maecenas cursus facilisis dictum.
     </p>
     <p>
-      Feel free to take a look at my <Link to="/cv">online curriculum vitæ</Link>, or <Link to="/contact">contact me</Link> if you have any questions.
+      Duis sed congue ligula.
+      {' '}
+      Praesent eget augue non quam pretium aliquam.
+      {' '}
+      Nulla facilisi.
+      {' '}
+      Etiam eu blandit eros.
+      {' '}
+      Nam lorem tortor, bibendum sed lacus nec, porttitor dictum elit.
+      {' '}
+      Nam justo mi, blandit quis faucibus sed, tincidunt at massa.
+      {' '}
+      Aenean vel commodo mauris.
+      {' '}
+      Ut neque magna, fermentum non dignissim nec, fringilla suscipit nulla.
+      {' '}
+      Aliquam eget erat vehicula nunc mollis porttitor.
+      {' '}
+      Maecenas viverra urna lacus, sed lacinia sapien tempor non.
+      {' '}
+      Sed non egestas magna, vitae posuere est.
+      {' '}
+      Pellentesque sapien tellus, fringilla vitae ipsum at, pretium faucibus velit.
+      {' '}
+      Donec sit amet imperdiet neque.
+      {' '}
+      Fusce dapibus sapien id orci tempor maximus.
+    </p>
+    <p>
+      Praesent pretium sem ut velit tristique, a egestas quam semper.
+      {' '}
+      Pellentesque pulvinar scelerisque tristique.
+      {' '}
+      Ut mi metus, aliquet a enim fermentum, tristique dapibus sem.
+      {' '}
+      Donec sed ex est.
+      {' '}
+      Cras maximus, odio vitae fringilla mollis, nisl ante feugiat ex, a tincidunt augue nisl id lectus.
+      {' '}
+      Sed vel est et turpis pretium pulvinar eget eu sapien.
+      {' '}
+      Suspendisse dapibus, ex sit amet viverra tristique, enim mi cursus enim, in volutpat purus elit vel eros.
+      {' '}
+      Suspendisse velit sapien, malesuada quis dapibus vel, molestie vel augue.
+      {' '}
+      Etiam varius ullamcorper libero, sit amet iaculis ante mollis eget.
+      {' '}
+      Aliquam erat volutpat.
+      {' '}
+      Ut maximus enim a imperdiet vulputate.
+      {' '}
+      Proin semper condimentum est nec interdum.
+      {' '}
+      Donec id vestibulum nulla.
     </p>
   </SpecialLayout>
 );

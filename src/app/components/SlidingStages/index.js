@@ -16,7 +16,7 @@ type DefaultProps = {
 
 type Props = {
   duration: number,
-  children: Element<*>,
+  children?: Element<*>,
 };
 
 type State = {
@@ -102,7 +102,7 @@ export default class SlidingStages extends Component<DefaultProps, Props, State>
         >
           {Children.toArray(children).map((stage, i) => (
             <div key={stage.key} className={styles.stage}>
-              {cloneElement(stage, { complete: (wait?: Promise<void>) => this.complete(i, wait) })}
+              {cloneElement(stage, i === length - 1 ? {} : { complete: (wait?: Promise<void>) => this.complete(i, wait) })}
             </div>
           ))}
         </div>
