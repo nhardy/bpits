@@ -8,12 +8,12 @@ import Breakout from 'app/components/Breakout';
 import Slider from 'app/components/Slider';
 import SlidingStages from 'app/components/SlidingStages';
 import form from 'app/components/Form/form';
-import OptionSelector from './OptionsSelector';
-import DeliveryDetails from './DeliveryDetails';
-import PaymentOptions from './PaymentOptions';
 import watch1Img from 'app/assets/images/watch1.jpg';
 import watch2Img from 'app/assets/images/watch2.jpg';
 import watch3Img from 'app/assets/images/watch3.jpg';
+import OptionSelector from './OptionsSelector';
+import DeliveryDetails from './DeliveryDetails';
+import PaymentOptions from './PaymentOptions';
 import styles from './styles.styl';
 import slideStyles from './slide.styl';
 
