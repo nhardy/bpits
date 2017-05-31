@@ -86,10 +86,10 @@ export default class SlidingStages extends Component<DefaultProps, Props, State>
     return (
       <div className={styles.root}>
         <div className={cx(styles.controls, styles.blur, { [styles.blurred]: loading })}>
-          <button className={styles.back} onClick={this.back} disabled={index === 0}>
+          <button type="button" className={styles.back} onClick={this.back} disabled={index === 0}>
             Back
           </button>
-          <button className={styles.forward} onClick={this.forward} disabled={index === length - 1 || index + 1 > completed}>
+          <button type="button" className={styles.forward} onClick={this.forward} disabled={index === length - 1 || index + 1 > completed}>
             Forward
           </button>
         </div>
