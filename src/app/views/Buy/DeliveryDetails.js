@@ -38,7 +38,15 @@ export default class DeliveryDetails extends Component<void, Props, void> {
           <span>Address Line 2</span>
           <Text name="address2" />
         </label>
-        <button type="button" onClick={this.next}>
+        <label>
+          <span>Suburb</span>
+          <Text name="suburb" required />
+        </label>
+        <label>
+          <span>Postcode</span>
+          <Text name="postcode" pattern="[0-9]*" minLength={4} maxLength={4} required />
+        </label>
+        <button className={styles.button} type="button" onClick={this.next}>
           Next
         </button>
       </div>

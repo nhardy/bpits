@@ -12,6 +12,7 @@ import watch1Img from 'app/assets/images/watch1.jpg';
 import watch2Img from 'app/assets/images/watch2.jpg';
 import watch3Img from 'app/assets/images/watch3.jpg';
 import OptionSelector from './OptionsSelector';
+import EngravingSelection from './EngravingSelection';
 import DeliveryDetails from './DeliveryDetails';
 import PaymentOptions from './PaymentOptions';
 import styles from './styles.styl';
@@ -38,10 +39,54 @@ export default class BuyView extends Component<DefaultProps, Props, State> {
   static defaultProps = {
     options: [
       {
-        description: 'Stuff',
+        title: 'Finish',
+        description: 'Choosing a finish for your watch is an important part of what makes a watch yours, and tells you a lot about the wearer.',
+        options: [
+          {
+            name: 'Metallic',
+            value: 'metal',
+          },
+          {
+            name: 'Leather',
+            value: 'leather',
+          },
+          {
+            name: 'Synthetic',
+            value: 'synth',
+          },
+        ],
+      },
+      {
+        title: 'Colour',
+        description: 'Choosing a watch colour really personalises your choice.\n' +
+          'If you want to emanate professionalism, there are a range of blacks.\n' +
+          'And... if you really want to stand out, there are options.',
+        options: [
+          {
+            name: 'Matte Black',
+            value: 'matte-black',
+          },
+          {
+            name: 'Jet Black',
+            value: 'jet-black',
+          },
+          {
+            name: 'Silver',
+            value: 'silver',
+          },
+          {
+            name: 'Azure',
+            value: 'azure',
+          },
+          {
+            name: 'Red',
+            value: 'red',
+          },
+        ],
       },
     ],
   };
+
   state = {
     images: [
       {
@@ -59,6 +104,10 @@ export default class BuyView extends Component<DefaultProps, Props, State> {
     ],
   };
 
+  onSubmit = (e: Event) => {
+    e.preventDefault();
+  }
+
   render() {
     const { options } = this.props;
     const { images } = this.state;
@@ -73,11 +122,12 @@ export default class BuyView extends Component<DefaultProps, Props, State> {
               ))}
             </Slider>
           </Breakout>
-          <form>
+          <form onSubmit={this.onSubmit}>
             <SlidingStages>
-              {options.map(({ description }) => (
-                <OptionSelector description={description} />
+              {options.map(option => (
+                <OptionSelector {...option} />
               ))}
+              <EngravingSelection />
               <DeliveryDetails />
               <PaymentOptions />
               <div className={slideStyles.root}>

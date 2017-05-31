@@ -9,7 +9,12 @@ import styles from './slide.styl';
 
 type Props = {
   complete?: (wait?: Promise<void>) => void,
+  title: string,
   description: string,
+  options: Array<{
+    name: string,
+    value: string,
+  }>
 };
 
 type State = {
@@ -34,14 +39,16 @@ export default class DeliveryDetails extends Component<void, Props, State> {
   };
 
   render() {
-    const { description } = this.props;
+    const { title, description, options } = this.props;
     return (
       <div className={styles.root}>
-        <h3>Options</h3>
+        <h3>{title}</h3>
         <p>{description}</p>
-        <button type="button" onClick={() => this.select('value')}>
-          Value
-        </button>
+        {options.map(({ name, value }) => (
+          <button className={styles.button} type="button" onClick={() => this.select(value)}>
+            {name}
+          </button>
+        ))}
       </div>
     );
   }
